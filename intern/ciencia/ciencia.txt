@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Foro - Introducir Nick</title>
+  <!-- Agrega el código del script de reCAPTCHA proporcionado por Google -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+  <h1>Introduce tu Nick</h1>
+  <form action="guardar_nick.php" method="post">
+    <input type="text" name="nickname" placeholder="Introduce tu Nick" required>
+    <!-- Agrega el elemento CAPTCHA -->
+    <div class="g-recaptcha" data-sitekey="6Lc8ergmAAAAAMGZ5h5p6Ke6Q50FBsLyUcjsfCJT"></div>
+    <input type="submit" value="Guardar">
+  </form>
+</body>
+</html>
